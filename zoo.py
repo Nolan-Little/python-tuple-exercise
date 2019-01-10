@@ -35,7 +35,13 @@ def find_animal(animal):
     except:
         print("That animal isn't in the zoo")
 
+def find_animal_2(animal):
+    if animal in zoo:
+        print(f"{animal} is in the zoo")
+    else:
+        print(f"The zoo doesn't have any {animal}")
 
 find_animal("Seal")
+find_animal_2("Wombat")
 print(zoo)
 
